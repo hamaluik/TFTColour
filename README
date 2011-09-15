@@ -1,0 +1,30 @@
+=== TFT Colour Picker ===
+Just a simple colour picker for Adafruit's TFT screens.
+These screens use a rarely-seen colour format called
+"rgb565", which packs 16-bit colour instead of the more
+usual 24-bit colour (often called "rgb888"). It does this
+by storing the top 5 bits as the blue value, the middle 6
+bits as the green value, and the bottom 5 bits as the blue
+value.
+
+This is normally trivial to do with a calculator, but
+when you're trying to get a bunch of different colours,
+it becomes a bit of a pain to deal with. Hence this simple
+tool. Select the colour you want, and it automatically
+calculates the corresponding rgb565 value, ready for
+direct pasting into your code!
+
+This tool is *quite* basic at the moment, and does not
+let you input colours in terms of normal hex - something
+that I was really hoping to achieve, but for once, python
+failed for me and I could not get it to work D:
+
+Anyway, to run this, you'll need to have Python (obviously)
+as well as wxPython (http://www.wxpython.org/). I built
+this against Python 2.7 and wxPython 2.9.2.3. It might
+work with other versions, but I don't know.
+
+If you want to edit it at all, PLEASE DO. If you manage
+to make it better, I would love to hear about it!
+
+Thanks for looking!
